@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Coupon Validity</title>
+</head>
+<body>
+    <h1>Check Coupon Validity</h1>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="coupon_to_check" placeholder="Enter coupon code">
+        <button type="submit">Check Coupon Validity</button>
+    </form>
+</body>
+</html>
